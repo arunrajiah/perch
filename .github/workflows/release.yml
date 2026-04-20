@@ -32,17 +32,18 @@ jobs:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
 
-      - name: Build APK via EAS cloud and download
+      - name: Build APK via EAS cloud
+        run: eas build --platform android --profile preview --non-interactive --wait
+
+      - name: Download APK from EAS
         id: eas
         run: |
-          BUILD_JSON=$(eas build \
+          BUILD_URL=$(eas build:list \
             --platform android \
-            --profile preview \
+            --limit 1 \
             --non-interactive \
-            --wait \
             --json \
-            2>/dev/null)
-          BUILD_URL=$(echo "$BUILD_JSON" | python3 -c \
+            2>/dev/null | python3 -c \
             "import sys,json; b=json.load(sys.stdin); print(b[0]['artifacts']['buildUrl'])")
           echo "url=$BUILD_URL" >> "$GITHUB_OUTPUT"
           curl -L "$BUILD_URL" -o perch.apk
