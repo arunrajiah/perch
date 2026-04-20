@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "birdnetpi-mobile",
-    "slug": "birdnetpi-mobile",
-    "version": "1.0.0",
+    "name": "Perch",
+    "slug": "perch",
+    "version": "0.1.0",
     "scheme": "perch",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,10 +13,8 @@
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
-    "ios": {
-      "supportsTablet": true
-    },
     "android": {
+      "package": "dev.arunrajiah.perch",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
@@ -24,12 +22,23 @@
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false
     },
+    "ios": {
+      "bundleIdentifier": "dev.arunrajiah.perch",
+      "supportsTablet": true
+    },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
       "expo-router",
       "expo-secure-store"
-    ]
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "31b3a6a3-01d9-4926-a7a8-51e3bf4fba0f"
+      }
+    },
+    "owner": "arunrajiah"
   }
 }
