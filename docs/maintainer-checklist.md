@@ -26,7 +26,7 @@ Reference checklist for recurring maintenance tasks.
 - [ ] Check for Expo SDK updates: `npx expo install --check`
 - [ ] Review open issues and PRs; label or close stale ones
 - [ ] Check BirdWeather API changelog or developer communications for breaking changes
-- [ ] Update [docs/supporters.md](supporters.md) if new sponsors have joined
+- [ ] Check [github.com/sponsors/arunrajiah](https://github.com/sponsors/arunrajiah) for any new sponsors to thank publicly
 
 ## Quarterly
 

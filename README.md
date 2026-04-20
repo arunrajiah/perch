@@ -117,8 +117,6 @@ If Perch is useful to you, consider sponsoring continued development:
 
 **[github.com/sponsors/arunrajiah](https://github.com/sponsors/arunrajiah)**
 
-Sponsorship tiers (Feeder · Nester · Migration · Flock) are described in [.github/SPONSOR_TIERS.md](.github/SPONSOR_TIERS.md). Sponsors are listed in [docs/supporters.md](docs/supporters.md).
-
 ---
 
 ## Acknowledgments
